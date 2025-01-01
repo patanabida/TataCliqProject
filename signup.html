@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Modal</title>
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/header.css">
+</head>
+
+<body>
+    <!-- Modal Container -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="close-btn">×</button>
+            <div class="modal-header">
+                <h1><span>TATA</span> <b>CLiQ</b> <span style="color: #ff0080;">FASHION</span></h1>
+                <p>Please enter your mobile number</p>
+            </div>
+            <form class="modal-form">
+                <label for="mobile-number">Mobile Number</label>
+                <div class="input-group">
+                    <span>+91</span>
+                    <input type="tel" id="mobile-number" placeholder="Enter Mobile Number" required>
+                <hr>
+                </div>
+                <a href="#" class="switch-method">Use Email Address</a>
+                <p class="disclaimer">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.
+                    <br>By continuing, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                </p>
+                <button type="submit" class="continue-btn" disabled>Continue</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/signup.js" type="module"></script>
+</body>
+
+</html>
