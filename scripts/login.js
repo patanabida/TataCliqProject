@@ -1,15 +1,14 @@
 import { baseUrl } from "./baseUrl.js";
 
 
-console.log(baseUrl)
+
 
 let form = document.getElementById("form");
 form.addEventListener("submit", function () {
   event.preventDefault();
-  let username = form.username.value;
   let email = form.email.value;
   let password = form.password.value;
-  let userObj = { username, email, password };
+ 
   /// logic is check whether email is present in the DB
   fetch(`${baseUrl}/users`)
     .then((res) => res.json())
@@ -17,21 +16,20 @@ form.addEventListener("submit", function () {
       let user = data.filter((el, i) => el.email == email);
       if (user.length != 0) {
         /// user present
-        alert("User already registred, please login");
-        window.location.href = "login.html"
+        // check for password
+        if(user[0].password == password){
+            alert("Login Sucess...");
+            localStorage.setItem("loginData", JSON.stringify(user[0]))
+            window.location.href = "index.html"
+        }else{
+            alert("Password is wrong, please login with right password")
+        }
+        
       } else {
-        /// user is not present
-        /// push the user into json server
-        fetch(`${baseUrl}/users`, {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(userObj),
-        }).then(() => {
-          alert("Signup Sucessfull");
-          window.location.href = "login.html"
-        });
+        // user not present
+        alert("User not registred, Please signup....");
+        window.location.href = "signup.html"
+        
       }
     })
     .catch((err) => {
