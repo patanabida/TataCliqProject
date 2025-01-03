@@ -13,13 +13,16 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+
 }
 
 /* Signup Container */
 .signup-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  height: 500px;
   padding: 20px;
+  margin: auto;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,11 +38,19 @@ body {
 /* Form Styles */
 form {
   width: 100%;
+  /* margin: 0 auto; */
+  padding: 50px;
+  
 }
 
 .form-group {
   margin-bottom: 15px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
 }
 
 label {
@@ -63,7 +74,7 @@ input:focus {
 }
 
 button {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   background-color: #007bff;
   color: white;

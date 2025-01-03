@@ -11,3 +11,7 @@
 
 ### ScreenShots:
 #### Home Page: ![HomePage](./Assests/screenshots/tatacliq1.png)
+
+#### SignUp Page: ![SignUpPAge](./Assests/screenshots/image.png)
+
+#### Login Page:![LoginPage](./Assests/screenshots/login.png)
