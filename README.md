@@ -10,9 +10,11 @@
 ### Deployed BackEnd Link: [link](https://keen-abundant-thread.glitch.me/)
 
 ### ScreenShots:
-#### Home Page: ![HomePage](./Assests/screenshots/tatacliq1.png)
+#### Home Page: 
+#### ![HomePage](./Assests/screenshots/tatacliq1.png)
 
 #### SignUp Page:
 #### ![SignUpPAge](./Assests/screenshots/image.png)
 
-#### Login Page:![LoginPage](./Assests/screenshots/login.png)
+#### Login Page:
+#### ![LoginPage](./Assests/screenshots/login.png)
