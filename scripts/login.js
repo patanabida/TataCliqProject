@@ -3,7 +3,7 @@ import { baseUrl } from "./baseUrl.js";
 
 
 
-let form = document.getElementById("form");
+let form = document.getElementById("login-cont");
 form.addEventListener("submit", function () {
   event.preventDefault();
   let email = form.email.value;

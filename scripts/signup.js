@@ -3,7 +3,7 @@ import { baseUrl } from "./baseUrl.js";
 
 console.log(baseUrl)
 
-let form = document.getElementById("form");
+let form = document.getElementById("signupForm");
 form.addEventListener("submit", function () {
   event.preventDefault();
   let username = form.username.value;
@@ -36,6 +36,6 @@ form.addEventListener("submit", function () {
     })
     .catch((err) => {
       console.log(err);
-      alert("Something wenr wrong, Please try again later");
+      alert("Something went wrong, Please try again later");
     });
 });

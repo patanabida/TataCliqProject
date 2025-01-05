@@ -1,5 +1,5 @@
 ### Project Name: Tata CLiQ Fastion
-### This web Page is 
+### This web Page is E-Commerce related page. In this page i will shows the how to signup and login related pages
 
 ### Tech Stack Used:HTML/CSS/JS
 
