@@ -13,9 +13,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  flex-direction: column;
 
 }
-
 /* Login contr */
 .login-cont {
   width: 100%;
